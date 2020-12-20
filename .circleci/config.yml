@@ -1,0 +1,22 @@
+version: 2.1
+
+  orbs:
+    python: rohanpm/python
+
+  jobs:
+    build-and-test:
+      executor: python27
+      steps:
+        - checkout
+        - python/load-cache
+        - python/install-deps
+        - python/save-cache
+        - run:
+            command: |
+              sudo python setup.py install
+              python setup.py test
+            name: Install and test
+  workflows:
+    main:
+      jobs:
+        - build-and-test

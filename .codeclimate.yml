@@ -1,0 +1,26 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        python:
+
+  fixme:
+    enabled: true
+  markdownlint:
+    enabled: true
+  pep8:
+    enabled: true
+ratings:
+  paths:
+    - strip_docs/**
+checks:
+  argument-count:
+    config:
+      threshold: 15
+  method-complexity:
+    config:
+      threshold: 50
+  method-count:
+    config:
+      threshold: 85
