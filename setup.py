@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-from doctor_wheel import __version__
+from strip_docs import __version__
 
 setup(keywords=['wheel', 'strip', 'size', 'reduction'],
       packages=find_packages(include=['doctor_wheel']),
