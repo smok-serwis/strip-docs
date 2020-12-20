@@ -7,8 +7,7 @@ jobs:
       - checkout
       - run:
           command: |
-            pwd
-            ls
+            pip install nose2
             python setup.py install
-            python setup.py test
+            nose2 -vv
           name: Install and test
