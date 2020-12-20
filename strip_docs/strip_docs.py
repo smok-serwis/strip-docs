@@ -1,10 +1,25 @@
 from __future__ import print_function
+
+import os
+
 try:
     import io
 except ImportError:
     import cStringIO as io
 import token
 import tokenize
+
+
+def do_path(pathname):
+    if os.path.isdir(pathname):
+        for rootdir, dirs, files in os.walk(pathname):
+            for file in files:
+                if file.endswith('.py') or file.endswith('.pyx') or file.endswith('.pxd'):
+                    path = os.path.join(rootdir, file)
+                    print('Doing %s' % (path,))
+                    do_file(path)
+    else:
+        do_file(pathname)
 
 
 def do_file(fname):
