@@ -10,7 +10,8 @@ A Python utility to remove all docstrings from your modules before shipping
 
 
 Info-anarchized from 
-[this Stack Overflow post](https://stackoverflow.com/questions/1769332/script-to-remove-python-comments-docstrings)
+[this Stack Overflow post](https://stackoverflow.com/questions/1769332/script-to-remove-python-comments-docstrings).
+Note that the proper copyright notice is retained.
 
 
 # Usage
