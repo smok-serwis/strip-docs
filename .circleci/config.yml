@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: smokserwis/build
     steps:
+      - checkout
       - run:
           command: |
             pwd
