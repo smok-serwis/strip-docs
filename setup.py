@@ -7,7 +7,7 @@ setup(keywords=['wheel', 'strip', 'size', 'reduction'],
       version=__version__,
       entry_points={
             "console_scripts": [
-                  "strip-docs = strip_docs.strip_docs:run",
+                  "strip-docs = strip_docs.run:run",
             ]
       }
       )
