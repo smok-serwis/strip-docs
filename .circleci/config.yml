@@ -8,5 +8,5 @@ jobs:
       - run:
           command: |
             pip install tox
-            tox
+            tox -vv
           name: Install and test
