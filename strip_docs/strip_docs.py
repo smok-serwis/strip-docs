@@ -42,6 +42,8 @@ def do_file(fname):
                     '%d.%d-%d.%d' % (slineno, scol, elineno, ecol),
                     ttext, ltext
                 ))
+            if isinstance(ttext, bytes):
+                ttext = ttext.decode('utf-8')
             if slineno > last_lineno:
                 last_col = 0
             if scol > last_col:
