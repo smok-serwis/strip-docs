@@ -2,12 +2,11 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: smokserwis/build
+     - image: themattrix/tox
     steps:
       - checkout
       - run:
           command: |
-            sudo pip install nose2
-            sudo python setup.py install
-            sudo nose2 -vv
+            sudo pip install tox
+            sudo tox
           name: Install and test
