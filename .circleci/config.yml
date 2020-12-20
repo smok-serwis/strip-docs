@@ -7,6 +7,6 @@ jobs:
       - checkout
       - run:
           command: |
-            sudo pip install tox
-            sudo tox
+            pip install tox
+            tox
           name: Install and test

@@ -1,5 +1,4 @@
 import unittest
-import os
 from strip_docs.strip_docs import do_file
 
 
