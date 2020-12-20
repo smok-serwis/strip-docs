@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           command: |
-            pip install nose2
-            python setup.py install
-            nose2 -vv
+            sudo pip install nose2
+            sudo python setup.py install
+            sudo nose2 -vv
           name: Install and test
