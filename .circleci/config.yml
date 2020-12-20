@@ -6,6 +6,8 @@ jobs:
     steps:
       - run:
           command: |
+            pwd
+            ls
             python setup.py install
             python setup.py test
           name: Install and test
