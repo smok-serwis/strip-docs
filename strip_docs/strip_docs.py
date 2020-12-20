@@ -43,6 +43,7 @@ def do_file(fname):
                     ttext, ltext
                 ))
             if isinstance(ttext, bytes):
+                # for Python 2.7
                 ttext = ttext.decode('utf-8')
             if slineno > last_lineno:
                 last_col = 0
