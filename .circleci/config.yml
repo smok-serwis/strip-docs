@@ -1,7 +1,7 @@
 version: 2.1
 
-  orbs:
-    python: rohanpm/python
+orbs:
+  python: rohanpm/python
 
   jobs:
     build-and-test:

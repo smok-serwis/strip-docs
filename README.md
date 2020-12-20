@@ -21,10 +21,16 @@ Just install it via pip
 pip install strip-docs
 ```
 
-And then launch it on any directory that you would like
-to see the docstrings gone.
+And then launch it on any list of files or directories that you would like
+to see the docstrings gone, this way:
+
+```bash
+strip-docs dir1 dir2 file1 file2 ...
+```
 
 All .py, .pyx and .pxd files will be processed.
+
+If you specify a single file, it will be processed
 
 # Caveats
 
